@@ -3,7 +3,7 @@ SELECT
     c.customer_id,
     a.current_balance,
     a.credit_limit,
-    (a.current_balance * 1.0 / a.credit_limit) AS credit_utilisation,
+    ROUND((a.current_balance * 1.0 / a.credit_limit),2) AS credit_utilisation,
     COUNT(d.default_date) AS previous_defaults
 FROM customers c
 JOIN accounts a
@@ -15,4 +15,5 @@ GROUP BY
     c.customer_id,
     a.current_balance,
     a.credit_limit
+
 HAVING COUNT(d.default_date) >= 1;
