@@ -10,7 +10,7 @@ The defaults table contains the customer id, and last default date, if any.
 
 An example output can be seen below.
 
-"customer_id"	| "current_balance"	| "credit_limit"	| "credit_utilisation"	| "previous_defaults"
+customer_id	| current_balance	| credit_limit	| credit_utilisation	| previous_defaults
 --------------|-------------------|-----------------|-----------------------|--------------------
 6	            |    77000	        |           95000	|0.81052631578947368421	|  1
 10	          |      90000	      |        105000	  |0.85714285714285714286	|  1
